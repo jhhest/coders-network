@@ -1,14 +1,15 @@
-# Project planning. 
-# 1. Setup Project initialisation. 
-- Setup Redux Store. 
-- setup thunk. 
-- Setup react-router.
-- Setup thunk. 
-- Setup folder structure. 
-- Setup materialize-ui. 
-- Setup basic requirement specification. 
-- Setup basic Design. 
-- Setup basic template for site. 
+# Project planning.
+
+# 1. Setup Project initialisation.
+
+- [x] Setup Redux Store.
+- [x] setup thunk.
+- [ ] Setup react-router.
+- [ ] Setup folder structure.
+- [ ] Setup materialize-ui.
+- [ ] Setup basic requirement specification.
+- [ ] Setup basic Design.
+- [ ] Setup basic template for site.
 
 # Create-react-app readme information.
 
