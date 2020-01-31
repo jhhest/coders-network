@@ -3,7 +3,7 @@
 # 1. Setup Project initialisation.
 
 - [x] Setup Redux Store.
-- [ ] setup thunk.
+- [x] setup thunk.
 - [ ] Setup react-router.
 - [ ] Setup thunk.
 - [ ] Setup folder structure.
