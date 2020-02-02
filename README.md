@@ -4,9 +4,9 @@
 
 - [x] Setup Redux Store.
 - [x] setup thunk.
-- [ ] Setup react-router.
-- [ ] Setup folder structure.
-- [ ] Setup materialize-ui.
+- [x] Setup react-router.
+- [x] Setup folder structure.
+- [x] Setup materialize-ui.
 - [ ] Setup basic requirement specification.
 - [ ] Setup basic Design.
 - [ ] Setup basic template for site.
