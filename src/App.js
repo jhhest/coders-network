@@ -3,7 +3,8 @@ import { Switch, Route } from "react-router-dom";
 
 import AboutUs from "./pages/AboutUs";
 import HomePage from "./pages/HomePage";
-import Login from "./pages/login/Login"
+import Login from "./pages/login/Login";
+import MenuListComponent from "./components/MenuListComponent"
 
 // import { MuiThemeProvider } from "@material-ui/core/styles";
 import clsx from "clsx";
@@ -11,22 +12,16 @@ import {
   Drawer,
   AppBar,
   Toolbar,
-  List,
   Typography,
   Divider,
   IconButton,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   StylesProvider,
   Container
 } from "@material-ui/core";
 
 import {
   Menu as MenuIcon,
-  ChevronLeft as ChevronLeftIcon,
-  Inbox as InboxIcon,
-  Mail as MailIcon
+  ChevronLeft as ChevronLeftIcon
 } from "@material-ui/icons";
 
 import styles from "./App.module.css";
@@ -84,18 +79,7 @@ export default class App extends Component {
               </IconButton>
             </div>
             <Divider />
-            <List>
-              {["Inbox", "Starred", "Send email", "Drafts"].map(
-                (text, index) => (
-                  <ListItem button key={text}>
-                    <ListItemIcon>
-                      {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                    </ListItemIcon>
-                    <ListItemText primary={text} />
-                  </ListItem>
-                )
-              )}
-            </List>
+            <MenuListComponent />
           </Drawer>
           <main
             className={clsx(styles.content, {
@@ -103,9 +87,9 @@ export default class App extends Component {
             })}
           >
             <div className={styles.drawerHeader} />
-            <Container fixed  >
+            <Container fixed>
               <Switch>
-              <Route path="/login" component={Login} />
+                <Route path="/login" component={Login} />
                 <Route path="/about-us" component={AboutUs} />
                 <Route exact path="/" component={HomePage} />
               </Switch>
