@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
+import CssBaseline from "@material-ui/core/CssBaseline";
 
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -11,11 +12,14 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <Provider store={store}>
-    <Router>
-      <App />
-    </Router>
-  </Provider>,
+  <Fragment>
+    <CssBaseline />
+    <Provider store={store}>
+      <Router>
+        <App />
+      </Router>
+    </Provider>
+  </Fragment>,
   document.getElementById("root")
 );
 
