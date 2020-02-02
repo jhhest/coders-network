@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 
-export class ContactPage extends Component {
+export class AboutUs extends Component {
   render() {
     return (
       <Fragment>
@@ -10,4 +10,4 @@ export class ContactPage extends Component {
   }
 }
 
-export default ContactPage;
+export default AboutUs;

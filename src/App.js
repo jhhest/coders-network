@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from "react";
 import { Switch, Route } from "react-router-dom";
 
-import ContactPage from "./pages/ContactPage";
+import AboutUs from "./pages/AboutUs";
 import HomePage from "./pages/HomePage";
+import Login from "./pages/login/Login"
 
 // import { MuiThemeProvider } from "@material-ui/core/styles";
 import clsx from "clsx";
@@ -95,17 +96,6 @@ export default class App extends Component {
                 )
               )}
             </List>
-            <Divider />
-            <List>
-              {["All mail", "Trash", "Spam"].map((text, index) => (
-                <ListItem button key={text}>
-                  <ListItemIcon>
-                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                  </ListItemIcon>
-                  <ListItemText primary={text} />
-                </ListItem>
-              ))}
-            </List>
           </Drawer>
           <main
             className={clsx(styles.content, {
@@ -115,7 +105,8 @@ export default class App extends Component {
             <div className={styles.drawerHeader} />
             <Container fixed  >
               <Switch>
-                <Route path="/Contact" component={ContactPage} />
+              <Route path="/login" component={Login} />
+                <Route path="/about-us" component={AboutUs} />
                 <Route exact path="/" component={HomePage} />
               </Switch>
             </Container>
