@@ -1,13 +1,14 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component, Fragment } from "react";
+import { Typography } from "@material-ui/core";
 
 export class HomePage extends Component {
-    render() {
-        return (
-            <Fragment>
-                <p>Here comes the HomePage</p>
-            </Fragment>
-        )
-    }
+  render() {
+    return (
+      <Fragment>
+        <Typography paragraph>Here comes the HomePage</Typography>
+      </Fragment>
+    );
+  }
 }
 
-export default HomePage
+export default HomePage;
