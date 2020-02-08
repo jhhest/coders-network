@@ -4,7 +4,8 @@ import { Switch, Route } from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
 import HomePage from "./pages/HomePage";
 import Login from "./pages/login/Login";
-import Posts from "./pages/Posts"
+import Posts from "./pages/posts/Posts";
+import Developers from "./pages/Developers"
 import { MenuListComponent } from "./components/menulistComponent/MenuListComponent";
 
 // import { MuiThemeProvider } from "@material-ui/core/styles";
@@ -94,6 +95,7 @@ export default class App extends Component {
                 <Route path="/login" component={Login} />
                 <Route path="/about-us" component={AboutUs} />
                 <Route path="/posts" component={Posts} />
+                <Route path="/developers" component={Developers} />
                 <Route exact path="/" component={HomePage} />
               </Switch>
             </Container>

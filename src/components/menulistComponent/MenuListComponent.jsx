@@ -44,7 +44,7 @@ export class MenuListComponent extends Component {
           </ListItem>
         </Link>
 
-        <Link>
+        <Link to="/developers">
           <ListItem button>
             <ListItemIcon>
               <DevelopersIcon />
